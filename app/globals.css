@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-background text-foreground font-sans antialiased;
+  background-image: radial-gradient(circle at top left, rgba(184, 115, 51, 0.15), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(184, 115, 51, 0.1), transparent 55%);
+  min-height: 100vh;
+}
+
+a {
+  @apply text-copper-500 hover:text-copper-600 transition-colors;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(184, 115, 51, 0.5);
+  border-radius: 9999px;
+}
